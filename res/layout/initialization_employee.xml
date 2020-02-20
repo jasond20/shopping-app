@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="?attr/colorPrimary">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:text="@string/initialization_employee"
+        android:textColor="?attr/colorText"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textNameInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorText"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editNameInputInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?attr/colorText"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textAgeInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorText"
+            android:text="@string/age" />
+
+        <EditText
+            android:id="@+id/editAgeInputInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?attr/colorText"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textAddressInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorText"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/editAddressInputInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?attr/colorText"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textPasswordInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorText"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/editPasswordInputInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?attr/colorText"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+
+        <Button
+            android:id="@+id/buttonInitializeEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/initialize" />
+    </LinearLayout>
+
+</LinearLayout>

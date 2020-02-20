@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/welcome_employee"
+        android:textColor="?attr/colorText"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonAuthenticateEmployee"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="12dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/authenticate_employee" />
+
+        <Button
+            android:id="@+id/buttonRegisterCustomer"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="12dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/register_new_customer" />
+        <Button
+            android:id="@+id/buttonRegisterAccount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="12dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/register_new_account" />
+        <Button
+            android:id="@+id/buttonRegisterEmployee"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="12dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/register_new_employee" />
+
+        <Button
+            android:id="@+id/buttonRestockInventory"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="12dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/restock_inventory" />
+
+        <Button
+            android:id="@+id/buttonExitEmployeeInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/log_out" />
+    </LinearLayout>
+
+
+</LinearLayout>

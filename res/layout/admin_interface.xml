@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="?attr/colorPrimary">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/welcome_admin"
+        android:textColor="?attr/colorText"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonPromoteEmployeeOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="20dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/promote" />
+
+        <Button
+            android:id="@+id/buttonViewHistoricSalesOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="10dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/sales_log" />
+
+        <Button
+            android:id="@+id/buttonViewCurrentInventoryOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="10dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/view_current_inventory" />
+        <Button
+            android:id="@+id/buttonViewCustomerInactiveAccountsOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="10dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/view_customer_inactive_accounts" />
+        <Button
+            android:id="@+id/buttonViewCustomerActiveAccountsOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="10dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/view_customer_active_accounts" />
+        <Button
+            android:id="@+id/buttonSerializeOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="10dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/serialize_current_database" />
+        <Button
+            android:id="@+id/buttonDeserializeOption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="10dp"
+            android:background="?attr/colorAccent"
+            android:text="@string/deserialize_new_database" />
+
+        <Button
+            android:id="@+id/buttonExitAdminInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/log_out" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

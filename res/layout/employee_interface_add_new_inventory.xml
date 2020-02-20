@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="?attr/colorPrimary">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/provide_details_add_inventory"
+        android:textColor="?attr/colorText"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textItemNameAddNewInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_name"
+            android:textColor="?attr/colorText" />
+
+        <TextView
+            android:id="@+id/textUpperCaseAddNewInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uppercase_and_as_spaces"
+            android:textColor="?attr/colorText"/>
+
+        <EditText
+            android:id="@+id/editItemNameInputAddNewInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?attr/colorText"
+            android:inputType="textNoSuggestions"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textPriceTwoDecimalsAddNewInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_2_decimals"
+            android:textColor="?attr/colorText" />
+
+        <EditText
+            android:id="@+id/editPriceInputAddNewInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?attr/colorText"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/buttonInsertAddNewInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/insert" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
